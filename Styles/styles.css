@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+
+a {
+    font-family: "Story Script", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 25px;
+}
+
+body {
+    background-color: rgb(37, 37, 99);
+}
