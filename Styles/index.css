@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+
+a {
+    font-family: "Story Script", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 25px;
+}
+
+body {
+
+/* COR DO FUNDO DO SITE */
+
+    background-color: rgb(251, 193, 235);
+    margin: 0%;
+    padding: 0%;
+}
+
+section {
+    padding: 28px 8%;
+}
+
+/* BOTÕES */
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 0, 183);
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0 px 10px 2px rgb(254, 254, 254);
+    cursor: pointer;
+}
+
+/* nome novo da empresa (mexer) */
+#nomeEmpresa {
+    font-size: 22px;
+    margin-left: -250px;
+}
+
+/* COR DE QUANDO PASSA MOUSE EM CIMA DOS BOTÕES */
+
+.btn-default:hover{
+    background-color: rgb(205, 52, 222);
+    transition: background-color .3s ease;
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #ffff;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1d1d1d;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0,0.1);
+    transition: box-shadow .3s ease;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0,0.1);
+}
+
+/* HEADER */
+
+header {
+    width: 84%;
+    padding: 28px 8%;
+}
+
+/* NAVBAR (INICIO/PRODUTOS/MEUS-PEDIDOS) */
+
+#navbar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* COR DA LOGO/NOME DO SITE */
+
+#nav_logo {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    gap: 0px 20px;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+/* COR DA ESCRITA (GUIAS DE PRODUTOS E ETC) */
+
+.nav-item a {
+    text-decoration: none;
+    color: rgb(255, 0, 183);
+    font-weight: 600;
+}
+
+/* COR DA ESCRITA DA PÁGINA ATUAL QUE ESTOU */
+
+.nav-item.active a {
+    color: rgb(230, 0, 255);
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #mobile_nav-list .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+} 
+
+/* HOME */
+#home {
+    display: flex;
+    min-height: calc(100vh - 91px);
+}
+
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#cta .title {
+    font-size: 4rem;
+    color: black;
+}
+
+#cta .title span {
+    color: rgb(255, 0, 183);
+}
+
+#cta .description {
+    font-size: 1.3rem;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+}
+
+#phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0,0.1);
+    border-radius: 12px;
+}
+
+#img_stetic{
+    width: 80%;
+
+}
