@@ -8,9 +8,7 @@ a {
 }
 
 body {
-
 /* COR DO FUNDO DO SITE */
-
     background-color: rgb(251, 193, 235);
     margin: 0%;
     padding: 0%;
@@ -21,6 +19,16 @@ section {
 }
 
 /* BOTÕES */
+
+.btn-default-campo {
+    max-width: 250px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
 
 .btn-default {
     border: none;
@@ -33,6 +41,27 @@ section {
     font-weight: 600;
     box-shadow: 0px 0 px 10px 2px rgb(254, 254, 254);
     cursor: pointer;
+}
+
+.btn-default-cta {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 0, 183);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0 px 10px 2px rgb(254, 254, 254);
+    cursor: pointer;
+    max-width: 250px;
+    width: 95%;
+    height: 40px;
+    color: white;   
+}
+
+.btn-default-cta  #text_catalog {
+    font-size: 18px;
 }
 
 /* nome novo da empresa (mexer) */
@@ -50,6 +79,8 @@ section {
 
 .social-media-buttons {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 18px;
 }
 
@@ -75,14 +106,18 @@ section {
 /* HEADER */
 
 header {
-    width: 84%;
-    padding: 28px 8%;
+    width: 100%;
+    padding: 28px 0px;
+    background-color: rgb(251, 193, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* NAVBAR (INICIO/PRODUTOS/MEUS-PEDIDOS) */
 
 #navbar {
-    width: 90%;
+    width: 86.2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,17 +127,22 @@ header {
 
 /* COR DA LOGO/NOME DO SITE */
 
-#nav_logo {
-    font-size: 24px;
-    color: rgb(0, 0, 0);
+.navbar_logo {
+    max-width: 250px;
     display: flex;
-    flex-direction: row;
-    gap: 0px 20px;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    gap: 0px 34px;
+}
+
+.navbar_logo .navbar_logo_item {
+    max-width: 60px;
+    width: 95%;
 }
 
 #nav_list {
     /* background-color: red; */
-    display: block;
     display: flex;
     list-style: none;
     gap: 3rem;
@@ -130,7 +170,18 @@ header {
 }
 
 #mobile_menu {
+    padding: 20px 0px;
     display: none;
+    background-color: rgb(251, 193, 235);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 150px;
+    z-index: 9999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 0px;
 }
 
 @media screen and (max-width: 1170px) {
@@ -152,16 +203,24 @@ header {
         align-items: center;
     }
 
-    #mobile_nav-list {
+    #mobile_nav_list {
         display: flex;
         flex-direction: column;
-        gap: 12px;
-        margin: 12px 0px;
+        align-items: center;
+        justify-content: center;
+        gap: 15px 0px;
+        margin-left: 0px;
+        list-style-type: none;
+        list-style: none;
     }
 
-    #mobile_nav-list .nav-item {
-        list-style: none;
+    .nav-item {
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        width: 100%;
+        
     }
 } 
 
@@ -173,12 +232,11 @@ header {
 }
 
 #cta {
-    width: 35%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 28px;
     margin-top: 5%;
-    
 }
 
 h1{
@@ -201,10 +259,14 @@ h1{
 
 #cta .description {
     font-size: 1.3rem;
+    text-align: justify;
 }
 
 #cta_buttons {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 24px;
 }
 
@@ -254,21 +316,38 @@ h6{
     top: 0;
     right: 0;
     z-index: 1;
-    
 }
+
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #phone_button button {
+        display: none;
+    }
+}
+
 
 #img_stetic{
     width: 80%;
 
 }
-
-#olho {
-    width: 4%;
-    /* margin-left: -510px; */
-
-
-}
-
 /* COR DA ESCRITA DE LINKS (NUMERO, VER CARDAPIO E ETC) */
 
 a{

@@ -20,9 +20,11 @@
 <body>
     <header>
         <nav id="navbar">
-            <i class="" id="nav_logo"></i>
-            <p id="nomeEmpresa">Espaço Ruys</p>
-            <img id="olho" src="Src/images/chin.png" alt="">
+            <div class="navbar_logo">
+                <p id="nomeEmpresa">Espaço Ruys</p>
+                <img class="navbar_logo_item" src="Src/images/chin.png" alt="">
+            </div>
+
             <ul id="nav_list">
                 <li class="nav-item active">
                     <a href="#home">Inicio</a>
@@ -35,30 +37,33 @@
                 </li>
             </ul>
 
-            <button class="btn-default">
-                Agende Uma Consulta
-            </button>
+            <div class="btn-default-campo">
+                <button class="btn-default">
+                    Agende Uma Consulta
+                </button>
+            </div>
 
             <button id="mobile_btn">
                 <i class="fa-solid fa-bars"> </i>
             </button>
         </nav>
-        <div id="mobile_menu">
-            <ul id="mobile_nav_list">
-                <li class="nav-item">
-                    <a href="#home">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu">Produtos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials">Sobre Nós</a>
-                </li>
-            </ul>
 
-            <button class="btn-default">
+        <div id="mobile_menu">
+            <div id="mobile_nav_list">
+                <div class="nav-item">
+                    <a href="#home">Inicio</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#menu">Produtos</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#testimonials">Sobre Nós</a>
+                </div>
+            </div>
+
+            <!-- <button class="btn-default-cta">
                 Peça aqui
-            </button>
+            </button> -->
         </div>
     </header>
 
@@ -74,25 +79,25 @@
                 </h1>
 
                 <p class="description">
-                    Pensar e cuidar de si mesma(o), não é egoísmo mas sim um ator de amor próprio.
+                    Dedicar tempo e atenção a si mesma(o) não é um ato de egoísmo, mas sim um fundamental exercício de amor próprio, essencial para o bem-estar.
                 </p>
 
                 <div id="cta_buttons">
-                    <a href="#" class="btn-default">
+                    <a href="#" class="btn-default-cta">
 
                         <span id="text_catalog">
-                            Ver cardapio
+                            Agendar uma consulta
                         </span>
                     </a>
 
-                    <a href="tel:+11967662019" id="phone_button">
+                    <!-- <a href="tel:+11967662019" id="phone_button">
                         <button class="btn-default">
                             <i class="fa-solid fa-phone"></i>
                         </button>
                         <h6>
                             (11) 96766-2019
                         </h6>
-                    </a>
+                    </a> -->
                 </div>
 
                 <div class="social-media-buttons">
