@@ -19,8 +19,9 @@ a {
 
 body {
 /* COR DO FUNDO DO SITE */
-    background: #dde8ed;
-background: linear-gradient(90deg,rgba(221, 232, 237, 1) 0%, rgba(199, 237, 215, 1) 50%, rgba(64, 179, 131, 1) 100%);
+   background: #0D1F23;
+   background: linear-gradient(90deg,rgba(13, 31, 35, 1) 16%, rgba(19, 46, 53, 1) 100%);
+
     margin: 0%;
     padding: 0%;
 }
@@ -46,7 +47,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(188, 188, 188);
+    background: #EEAECA;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     border-radius: 12px;
     padding: 10px 14px;
     font-weight: 600;
@@ -59,7 +61,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(130, 130, 130);
+    background: #EEAECA;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     border-radius: 8px;
     padding: 10px 14px;
     font-weight: 600;
@@ -68,7 +71,7 @@ section {
     max-width: 250px;
     width: 95%;
     height: 40px;
-    color: white;   
+    color: rgb(0, 0, 0);   
 }
 
 .btn-default-cta  #text_catalog {
@@ -77,14 +80,19 @@ section {
 
 /* nome novo da empresa (mexer) */
 #nomeEmpresa {
-    font-size: 25px;
+    font-size: 24.2px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* margin-left: -170px; */
 }
 
 /* COR DE QUANDO PASSA MOUSE EM CIMA DOS BOTÕES */
 
 .btn-default:hover{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     transition: background-color .3s ease;
 }
 
@@ -101,7 +109,8 @@ section {
     justify-content: center;
     width: 45px;
     height: 40px;
-    background-color: #ffff;
+    background: #EEAECA;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     font-size: 1.25rem;
     border-radius: 10px;
     text-decoration: none;
@@ -114,12 +123,11 @@ section {
     box-shadow: 0px 0px 12px 8px rgba(0, 0, 0,0.1);
 }
 
-/* HEADER */
+/* BARRA DE NAVEGAÇÃO / HEADER */
 
 header {
     width: 100%;
     padding: 28px 0px;
-    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,15 +173,15 @@ header {
 
 .nav-item a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #94BBE9;
     font-weight: 600;
 }
 
 /* COR DA ESCRITA DA PÁGINA ATUAL QUE ESTOU */
 
 .nav-item.active a {
-    color: rgb(203, 186, 205);
-    border-bottom: 3px solid rgb(0, 0, 0);
+    color: #94BBE9;
+    border-bottom: 3px solid #EEAECA;
 }
 
 #mobile_btn {
@@ -261,17 +269,20 @@ h1{
 
 #cta .title {
     font-size: 1.66rem;
-    color: black;
+    color: #94BBE9
 }
 
+/* Você */
+
 #cta .title span {
-    color: rgb(255, 0, 183);
+    color: #EEAECA
 }
 
 #cta .description {
-    font-size: 1.3rem;
+    font-size: 1.18rem;
     text-align: left;
     line-height: 50px;
+    color: #ffffff
 }
 
 #cta_buttons {
@@ -320,7 +331,8 @@ h6{
 }
 
 .shape {
-    background-image: linear-gradient(150deg, #f5f7fa 0%, #e1e6ee 100%);
+    background: #EEAECA;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     width: 60%;
     height: 80%;
     position: absolute;
@@ -373,7 +385,8 @@ h6{
 }
 
 .dish {
-    background-color: rgb(136, 0, 255);
+    background: #EEAECA;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     max-width: 320px;
     width: 95%;
     display: flex;
@@ -394,7 +407,7 @@ h6{
     right: 0px;
     width: 60px;
     height: 60px;
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(0, 0, 0, 0.527);
     border-radius: 0px 25px 0px 50%;
     display: flex;
     flex-direction: row;
@@ -422,7 +435,7 @@ h6{
 /* COR DA ESCRITA DE LINKS (NUMERO, VER CARDAPIO E ETC) */
 
 a{
-    color: #1d1d1d;
+    color: #fa0404;
 }
 
 .menu-titulo {
@@ -449,8 +462,8 @@ a{
     align-items: center;
     justify-content: center;
     display: flex;
-    color: rgb(255, 255, 255);
-    font-size: 28px;
+    color: #94BBE9;
+    font-size: 32px;
     width: 100%;
     text-align: center;
 }
@@ -462,6 +475,7 @@ a{
     font-size: 35px;
     width: 100%;
     text-align: center;
+    color: #EEAECA;
 }
 
 .estrelinhas-avaliação {
@@ -485,7 +499,7 @@ a{
 }
 
 .SaibaMais {
-    background-color: rgb(255, 0, 0);
+    background-color: #000000;
     max-width: 210px;
     width: 100%;
     border-radius: 10px;
