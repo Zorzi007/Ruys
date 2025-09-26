@@ -131,6 +131,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    background: #0D1F23;
+    background: linear-gradient(90deg,rgba(13, 31, 35, 1) 16%, rgba(19, 46, 53, 1) 100%);
+    z-index: 3;
 }
 
 /* NAVBAR (INICIO/PRODUTOS/MEUS-PEDIDOS) */
@@ -510,4 +515,21 @@ a{
     text-decoration: none;
     font-size: 18px;
     color: #ffffff;
+}
+
+@media screen and (max-width: 1170px) {
+    #dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dish {
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dish {
+        width: calc(100% - 12px);
+    }
 }
