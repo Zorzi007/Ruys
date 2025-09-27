@@ -533,3 +533,8 @@ a{
         width: calc(100% - 12px);
     }
 }
+
+.MulherDeAvaliações {
+    width: 20%;
+    border-radius: 15px;
+}
