@@ -538,3 +538,10 @@ a{
     width: 20%;
     border-radius: 15px;
 }
+
+.Avatar1 {
+    width: 7%;
+    border-radius: 15px;
+    margin-left: -20px;
+    margin-top: -10px;
+}
