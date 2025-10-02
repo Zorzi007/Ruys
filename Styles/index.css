@@ -126,7 +126,7 @@ section {
 
 header {
     width: 100%;
-    padding: 28px 0px;
+    padding: 10px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,6 +253,7 @@ header {
     display: flex;
     min-height: calc(100vh - 91px);
     position: relative;
+    height: auto;
 }
 
 #cta {
@@ -260,7 +261,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 28px;
-    margin-top: 5%;
 }
 
 h1{
@@ -287,7 +287,7 @@ h1{
     font-size: 1.18rem;
     text-align: left;
     line-height: 50px;
-    color: #ffffff
+    color: #ffffff;
 }
 
 #cta_buttons {
@@ -324,22 +324,22 @@ h6{
 #banner {
     display: flex;
     align-items: start;
-    justify-content: end;
+    justify-content: center;
     width: 72.8%;
     z-index: 2;
+    margin-left: 80px;
 }
 
 #banner img {
-    height: 75%;
+    height: 90%;
     width: fit-content;
-
 }
 
 .shape {
     background: #EEAECA;
     background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     width: 55%;
-    height: 80%;
+    height: 95%;
     position: absolute;
     border-radius: 25% 15% 0% 10%;
     top: 0;
@@ -472,6 +472,7 @@ a{
     font-size: 32px;
     width: 100%;
     text-align: center;
+    margin-top: 11%;
 }
 
 .section-title-subtitle {
@@ -675,4 +676,8 @@ a{
     width: 28px;
     height: 28px;
     vertical-align: middle;
+}
+
+.Footer-Description {
+    font-weight: bold;
 }
