@@ -211,6 +211,15 @@ Você merece esse momento só seu. Agende agora e permita-se viver essa transfor
 
                     <a class="SaibaMais" href="#">Quero Saber Mais</a>
                 </div>
+
+                <!-- Card Destaque do Dia -->
+                <div class="dish destaque-dia">
+                    <!-- Conteúdo do produto destaque -->
+                    <img src="caminho/para/imagem.jpg" alt="Produto Destaque">
+                    <h3>Produto Destaque do Dia</h3>
+                    <p>Descrição especial do produto.</p>
+                    <!-- ...outros elementos... -->
+                </div>
             </div>
         </section>
         
@@ -260,6 +269,69 @@ Você merece esse momento só seu. Agende agora e permita-se viver essa transfor
                 </button>
             </div>
         </section>
+
+        <div id="contador-clientes" style="font-size:2rem; color:#EEAECA; font-weight:bold; text-align:center; margin:24px 0;">
+        <span id="clientes-numero">0</span> clientes atendidos!
+    </div>
+
+    <!-- Slogan digitando abaixo do contador e acima do footer -->
+    <h2 id="slogan-digitando" style="color:#94BBE9; text-align:center; font-size:2rem; min-height:2.5em;"></h2>
+
+    <!-- FAQ e Mapa lado a lado -->
+<div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:center;align-items:flex-start;max-width:1200px;margin:40px auto;">
+    <!-- FAQ Interativo mais bonito visualmente -->
+    <section id="faq" style="flex:1 1 380px;min-width:320px;max-width:540px;">
+        <h2 style="text-align:center;color:#94BBE9;">Perguntas Frequentes</h2>
+        <div class="faq-list" style="display:flex;flex-direction:column;gap:18px;">
+            <div class="faq-item" style="background:#f7f7fa;border-radius:12px;box-shadow:0 2px 12px rgba(148,187,233,0.10);padding:0;">
+                <button class="faq-question" style="width:100%;background:none;border:none;text-align:left;padding:18px 24px;font-size:1.1rem;color:#94BBE9;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;">
+                    Como agendo uma consulta?
+                    <span style="font-size:1.3em;">&#x25BC;</span>
+                </button>
+                <div class="faq-answer" style="display:none;padding:0 24px 18px 24px;color:#333;font-size:1rem;">
+                    Clique no botão de agendamento ou envie mensagem pelo WhatsApp.
+                </div>
+            </div>
+            <div class="faq-item" style="background:#f7f7fa;border-radius:12px;box-shadow:0 2px 12px rgba(148,187,233,0.10);padding:0;">
+                <button class="faq-question" style="width:100%;background:none;border:none;text-align:left;padding:18px 24px;font-size:1.1rem;color:#94BBE9;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;">
+                    Quais serviços vocês oferecem?
+                    <span style="font-size:1.3em;">&#x25BC;</span>
+                </button>
+                <div class="faq-answer" style="display:none;padding:0 24px 18px 24px;color:#333;font-size:1rem;">
+                    Limpeza de pele, massagens, tratamentos estéticos e muito mais!
+                </div>
+            </div>
+            <div class="faq-item" style="background:#f7f7fa;border-radius:12px;box-shadow:0 2px 12px rgba(148,187,233,0.10);padding:0;">
+                <button class="faq-question" style="width:100%;background:none;border:none;text-align:left;padding:18px 24px;font-size:1.1rem;color:#94BBE9;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;">
+                    Onde fica a clínica?
+                    <span style="font-size:1.3em;">&#x25BC;</span>
+                </button>
+                <div class="faq-answer" style="display:none;padding:0 24px 18px 24px;color:#333;font-size:1rem;">
+                    Estamos localizados em São Paulo, veja o mapa ao lado.
+                </div>
+            </div>
+            <!-- Nova pergunta frequente para alinhar com o mapa -->
+            <div class="faq-item" style="background:#f7f7fa;border-radius:12px;box-shadow:0 2px 12px rgba(148,187,233,0.10);padding:0;">
+                <button class="faq-question" style="width:100%;background:none;border:none;text-align:left;padding:18px 24px;font-size:1.1rem;color:#94BBE9;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;">
+                    Preciso marcar horário ou posso ir direto?
+                    <span style="font-size:1.3em;">&#x25BC;</span>
+                </button>
+                <div class="faq-answer" style="display:none;padding:0 24px 18px 24px;color:#333;font-size:1rem;">
+                    Para garantir seu atendimento e evitar espera, recomendamos agendar seu horário com antecedência.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa interativo maior ao lado direito -->
+    <section id="mapa" style="flex:1 1 380px;min-width:320px;max-width:600px;text-align:center;">
+        <h2 style="color:#94BBE9;">Como chegar</h2>
+        <iframe src="https://www.google.com/maps?q=Espaço+Ruys,+São+Paulo&output=embed"
+            width="100%" height="400"
+            style="border-radius:18px;border:none;box-shadow:0 4px 24px rgba(148,187,233,0.15);"></iframe>
+    </section>
+</div>
+
     </main>
 
     <footer class="site-footer">
@@ -273,5 +345,109 @@ Você merece esse momento só seu. Agende agora e permita-se viver essa transfor
         </div>
     </footer>
 
+    <!-- Botão WhatsApp flutuante -->
+<a href="https://wa.me/5511967662019?text=Olá!%20quero%20agendar%20uma%20consulta." class="whatsapp-float" title="Fale conosco no WhatsApp" target="_blank" id="whatsapp-float">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Botão Voltar ao topo agora no lado esquerdo -->
+<button id="voltar-topo" style="display:none;position:fixed;bottom:90px;left:24px;z-index:9999;background:#94BBE9;color:#fff;border:none;border-radius:50%;width:48px;height:48px;font-size:1.5rem;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,0.2);">↑</button>
+
+<div id="barra-progresso" style="position:fixed;top:0;left:0;width:0;height:5px;background:#EEAECA;z-index:9999;transition:width .2s;"></div>
+
     <script src="JavaScript/script.js"></script>
+
+    
+    <script>
+let clientes = 0, alvo = 1247; // Altere o número alvo!
+const el = document.getElementById('clientes-numero');
+const intervalo = setInterval(() => {
+  if (clientes < alvo) {
+    clientes += Math.ceil((alvo-clientes)/30);
+    el.textContent = clientes;
+  } else {
+    el.textContent = alvo;
+    clearInterval(intervalo);
+  }
+}, 30);
+</script>
+
+
+<script>
+const topoBtn = document.getElementById('voltar-topo');
+window.addEventListener('scroll',()=>{topoBtn.style.display=window.scrollY>200?'block':'none';});
+topoBtn.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+</script>
+
+
+<script>
+const texto = "Seu bem-estar começa aqui!";
+let i = 0;
+function digitar() {
+  document.getElementById('slogan-digitando').textContent = texto.slice(0,i);
+  if(i<=texto.length){i++;setTimeout(digitar,80);}
+}
+digitar();
+</script>
+
+
+<script>
+const whatsappBtn = document.getElementById('whatsapp-float');
+const footer = document.querySelector('.site-footer');
+function ajustarWhatsappBtn() {
+    const footerRect = footer.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    // Se o footer está visível na tela, ajusta o botão para não sobrepor
+    if (footerRect.top < windowHeight) {
+        const distancia = windowHeight - footerRect.top + 24;
+        whatsappBtn.style.bottom = distancia + 'px';
+    } else {
+        whatsappBtn.style.bottom = '24px';
+    }
+}
+window.addEventListener('scroll', ajustarWhatsappBtn);
+window.addEventListener('resize', ajustarWhatsappBtn);
+document.addEventListener('DOMContentLoaded', ajustarWhatsappBtn);
+</script>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.onclick = () => {
+        const ans = btn.parentElement.querySelector('.faq-answer');
+        const opened = ans.style.display === 'block';
+        // Fecha todos
+        document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+        document.querySelectorAll('.faq-question span').forEach(s => s.style.transform = 'rotate(0deg)');
+        // Abre o clicado
+        if (!opened) {
+            ans.style.display = 'block';
+            btn.querySelector('span').style.transform = 'rotate(180deg)';
+        }
+    };
+});
+</script>
+
+<script>
+window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const perc = (doc.scrollTop/(doc.scrollHeight-doc.clientHeight))*100;
+    document.getElementById('barra-progresso').style.width = perc + '%';
+});
+</script>
+
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;width:100%;background:#94BBE9;color:#fff;text-align:center;padding:12px;z-index:99999;display:none;">
+    Este site utiliza cookies para melhorar sua experiência. <button id="aceitar-cookies" style="margin-left:12px;padding:6px 16px;border:none;border-radius:6px;background:#EEAECA;color:#fff;cursor:pointer;">Aceitar</button>
+</div>
+
+<script>
+if(!localStorage.getItem('cookiesAceitos')){
+    document.getElementById('cookie-banner').style.display = 'block';
+}
+document.getElementById('aceitar-cookies').onclick = () => {
+    localStorage.setItem('cookiesAceitos','sim');
+    document.getElementById('cookie-banner').style.display = 'none';
+};
+</script>
+
 </body>
+</html>

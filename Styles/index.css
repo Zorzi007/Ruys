@@ -25,6 +25,11 @@ body {
     padding: 0%;
 }
 
+/* Efeito Parallax no fundo */
+body {
+    background-attachment: fixed;
+}
+
 section {
     padding: 28px 8%;
 }
@@ -274,7 +279,8 @@ h1{
 
 #cta .title {
     font-size: 1.66rem;
-    color: #94BBE9
+    color: #94BBE9;
+    margin-top: 13%;
 }
 
 /* Você */
@@ -405,6 +411,15 @@ h6{
     padding: 20px 0px;
     border-radius: 25px;
     position: relative;
+}
+
+/* Animação de estrelas brilhando nas avaliações */
+.estrela {
+    animation: estrelaBrilha 1.2s infinite alternate;
+}
+@keyframes estrelaBrilha {
+    from { filter: drop-shadow(0 0 2px gold);}
+    to { filter: drop-shadow(0 0 12px gold);}
 }
 
 .dish-heart {
@@ -680,4 +695,65 @@ a{
 
 .Footer-Description {
     font-weight: bold;
+}
+
+/* Animação de entrada suave */
+body, header, section, .dish, .site-footer {
+    animation: fadeIn 1.2s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* Botão WhatsApp fixo */
+.whatsapp-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    font-size: 2rem;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+.whatsapp-float:hover {
+    background: #128C7E;
+}
+
+/* Efeito de brilho no nome da empresa */
+#nomeEmpresa {
+    text-shadow: 0 0 8px #EEAECA, 0 0 16px #94BBE9;
+    animation: glow 1.5s infinite alternate;
+}
+@keyframes glow {
+    from { text-shadow: 0 0 8px #EEAECA, 0 0 16px #94BBE9;}
+    to { text-shadow: 0 0 18px #EEAECA, 0 0 32px #94BBE9;}
+}
+
+/* Card de destaque animado */
+.destaque-dia {
+    border: 2px solid #EEAECA;
+    box-shadow: 0 0 24px 4px #EEAECA;
+    animation: destaquePulse 1.5s infinite alternate;
+}
+@keyframes destaquePulse {
+    from { box-shadow: 0 0 12px 2px #EEAECA;}
+    to { box-shadow: 0 0 32px 8px #EEAECA;}
+}
+
+/* Efeito hover nas imagens dos produtos */
+.dish img {
+    transition: transform 0.3s;
+}
+.dish img:hover {
+    transform: scale(1.08) rotate(-2deg);
 }
